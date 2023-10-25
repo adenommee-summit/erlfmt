@@ -584,5 +584,5 @@ force_next_flex_break([]) ->
 indent(0) ->
     ?newline;
 indent(Indent) when is_integer(Indent) ->
-    Spaces = binary:copy(<<" ">>, Indent),
+    Spaces = binary:copy(<<"\t">>, Indent),
     <<?newline/binary, Spaces/binary>>.
